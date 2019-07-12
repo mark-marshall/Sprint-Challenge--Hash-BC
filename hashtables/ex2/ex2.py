@@ -17,7 +17,7 @@ def reconstruct_trip(tickets, length):
     hashtable = HashTable(length)
     #initialize an array for the route
     route = [None] * length
-    # loop overthe tickets array and add them to the hash table
+    # loop over the tickets array and add them to the hash table
     for ticket in tickets:
         hash_table_insert(hashtable, ticket.source, ticket.destination)
     # add the starting destination to the route

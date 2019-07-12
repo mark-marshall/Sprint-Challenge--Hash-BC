@@ -9,8 +9,10 @@ from hashtables import (HashTable,
 def get_indices_of_item_weights(weights, length, limit):
     # initialize a hash table
     ht = HashTable(16)
+    # add the first weight to the hash table
+    hash_table_insert(ht, weights[0], 0)
     # initialize a current index
-    cur_index = 0
+    cur_index = 1
     # loop incrementally adding weights and checking against limit
     while cur_index < length:
         cur_weight = weights[cur_index]
